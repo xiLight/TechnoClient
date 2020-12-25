@@ -1,0 +1,47 @@
+{
+  "name": "TechnoClient",
+  "version": "1.0.18",
+  "description": "TechnobaseFM Client",
+  "main": "index.js",
+  "scripts": {
+    "pack": "npm version patch --force && electron-builder --dir",
+    "dist": "npm version patch --force && electron-builder",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Jens98",
+  "license": "ISC",
+  "build": {
+    "appId": "dev.jens98.technoclient",
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "AppImage",
+        "deb",
+        "tar.gz"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "Logo.png"
+    }
+  },
+  "dependencies": {
+    "app": "^0.1.0"
+  },
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiLight/TechnoClient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiLight/TechnoClient/issues"
+  },
+  "homepage": "https://github.com/xiLight/TechnoClient#readme"
+}
